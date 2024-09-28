@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers/
+
+###
+
+GET http://localhost:3000/subscribers/66f816dba1e9a46591895969
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Nemash",
+    "subscribedToChannel": "Nodejs"
+}
+
+
+###
+DELETE http://localhost:3000/subscribers/66f816dba1e9a46591895969
+
+###
+PATCH  http://localhost:3000/subscribers/66f816dba1e9a46591895969
+Content-Type: application/json
+
+{
+    "name" : "Randeniya"
+}
